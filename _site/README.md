@@ -24,3 +24,10 @@ localhost:4000
 4) When you want to shut-down the site, use Ctrl+C then run:
 ```
 docker-compose down
+
+#TODO style.css on production is an empty file
+# futhermore style.css does not exist locally.
+# main. css is what we want
+
+# locally main.css is being used but on prod
+# style.css is being used... Issue with feed?
