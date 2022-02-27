@@ -14,8 +14,8 @@ email: riccardi.dalexis@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Mainly a brain dump about things I encounter while working. Otherwise, I probably
   would forget them...
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/_site" # the subpath of your site, e.g. /blog
+url: "https://rod7760.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  rod7760
 
 # Build settings
