@@ -15,10 +15,11 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="About" />
 <script type="application/ld+json">
-{"@type":"WebSite","description":"Mainly a brain dump about things I encounter while working. Otherwise, I probably would forget them…","url":"http://0.0.0.0:4000/mental_changelog.github.io/about/","headline":"About","name":"Mental Changelog","@context":"https://schema.org"}</script>
+{"description":"Mainly a brain dump about things I encounter while working. Otherwise, I probably would forget them…","headline":"About","url":"http://localhost:4000/about/","@type":"WebSite","name":"Mental Changelog","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/mental_changelog.github.io/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/mental_changelog.github.io/feed.xml" title="Mental Changelog" /></head>
-<body><header class="site-header" role="banner">
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Mental Changelog" />
+</head>
+<body><header class="site-header">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/mental_changelog.github.io/">Mental Changelog</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -54,21 +55,23 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Mental Changelog</h2>
-
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">Mental Changelog</li><li><a class="u-email" href="mailto:riccardi.dalexis@gmail.com">riccardi.dalexis@gmail.com</a></li></ul>
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="http://localhost:4000/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
       </div>
-
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/rod7760"><svg class="svg-icon"><use xlink:href="/mental_changelog.github.io/assets/minima-social-icons.svg#github"></use></svg> <span class="username">rod7760</span></a></li></ul>
-</div>
-
-      <div class="footer-col footer-col-3">
+      <div class="footer-col">
         <p>Mainly a brain dump about things I encounter while working. Otherwise, I probably would forget them...</p>
       </div>
     </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
 
   </div>
 
