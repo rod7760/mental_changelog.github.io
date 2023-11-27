@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Unit testing a widget library'
+title: 'Unit Testing a Widget Library'
 date: '2022-02-24'
 categories: unit-testing
 ---
