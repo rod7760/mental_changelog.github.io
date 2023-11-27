@@ -6,25 +6,25 @@ categories: coursework
 ---
 
 
-I recently had the opportunity to take CS 464 Open Source Software as an eCampus student at Oregon State University. 
+I recently had the opportunity to take CS 464, Open Source Software, as an eCampus student at Oregon State University. 
 I liked this class so much that I decided to write a review about it.
 
 ### Course Structure
 
-The course consisted of 4 short quizzes, weekly discussions, and a Final Portfolio assignment. 
-One thing I enjoyed about the course structure is that it was minimal. 
+The course consisted of 4 short quizzes, weekly discussions, and a final portfolio project.
+I appreciated the minimalistic nature of the course structure.
 The flexible requirements allowed me to delve deeper into whatever open-source project I wanted.
 
 ### Assignments
 
 The assignments are mainly designed to make sure you are making progress toward your portfolio assignment and just generally interacting with open-source projects. 
 Moreover, you had to submit a proposal beforehand for each assignment, which essentially was a draft.
-The proposals did a great job at keeping me on track personally. 
+The proposals did a great job of keeping me on track. 
 I struggle with starting tasks, so having these checkpoints was invaluable.
 
 ### Discussions
 
-The discussions served as additional check-ins, had some reading about open source, and let you explore open-source projects.
+The discussions served as additional check-ins, had some reading about open-source concepts, and let you explore open-source projects.
 
 ### Portfolio Project
 
@@ -34,7 +34,7 @@ Homepage allows you to create dashboards for your homelab.
 
 One of the features that I like is that you can configure your dashboard from a docker-compose file. 
 However, the docker integration lacked support to configure bookmarks from the compose file. 
-I was able to write this feature, and I am hoping to get it merged in soon. 
+I wrote this feature and hope to have it merged soon.
 You can see my pull request [here](https://github.com/gethomepage/homepage/pull/2367#issuecomment-1827150820).
 
 ### Conclusion
