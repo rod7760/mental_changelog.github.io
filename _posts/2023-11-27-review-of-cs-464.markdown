@@ -5,6 +5,7 @@ date: '2023-11-27'
 categories: coursework
 ---
 
+
 I recently had the opportunity to take CS 464 Open Source Software as an eCampus student at Oregon State University. 
 I liked this class so much that I decided to write a review about it.
 
