@@ -27,7 +27,7 @@ docker-compose down
 
 #TODO style.css on production is an empty file
 # futhermore style.css does not exist locally.
-# main. css is what we want
+# main.css is what we want
 
 # locally main.css is being used but on prod
 # style.css is being used... Issue with feed?
