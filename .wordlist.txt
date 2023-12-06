@@ -1,0 +1,5 @@
+Ecampus
+lvgl
+minimalistic
+homelab
+permalink
