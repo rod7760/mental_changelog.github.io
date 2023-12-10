@@ -3,3 +3,8 @@ lvgl
 minimalistic
 homelab
 permalink
+scalable
+MkDocs
+Pluggy
+Jinja
+opensource
