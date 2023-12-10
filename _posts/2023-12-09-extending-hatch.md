@@ -18,8 +18,7 @@ I thought it would be interesting to automatically add MkDocs to the `hatch new`
 ## Creating The Plugin 
 
 I initialized a new project with `hatch new -i`. 
-
-After completing the prompts, I a `hatch-mkdocs-template` project. 
+After completing the prompts, I have a `hatch-mkdocs-template` project. 
 
 Hatch uses Pluggy as its plugin manager. It defines the following interface for Template plugins:
 
