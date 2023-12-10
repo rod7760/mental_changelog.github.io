@@ -20,8 +20,7 @@ github_username:  rod7760
 
 # Build settings
 markdown: kramdown
-#remote_theme: jekyll/minima
-theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
