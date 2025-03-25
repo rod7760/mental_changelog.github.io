@@ -9,13 +9,12 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # in the templates via {{ site.myvariable }}.
-title: Mental Changelog
+title: Ricky Dalexis
 email: riccardi.dalexis@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Mainly a brain dump about things I encounter while working. Otherwise, I probably
   would forget them...
-baseurl: "/mental_changelog.github.io" # the subpath of your site, e.g. /blog
-url: "https://rod7760.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://rickydalexis.com/" # the base hostname & protocol for your site
 github_username:  rod7760
 
 # Build settings
