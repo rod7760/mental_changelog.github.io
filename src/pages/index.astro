@@ -1,58 +1,67 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
+
 <BaseLayout>
-		<style>
-		
-  h2,
-  .post-item-footer {
-    font-family: var(--font-family-sans);
-    font-weight: 700;
-  }
+  <style>
+    h2,
+    .post-item-footer {
+      font-family: var(--font-family-sans);
+      font-weight: 700;
+    }
 
-  .post-item-date {
-    //color: var(--text-secondary);
-    text-align: left;
-    text-transform: uppercase;
-    margin-right: 16px;
-    font-size: 14px;
-    color: #818181;
-  }
-.container {
-  margin: 0 auto;
-  max-width: 42em;
-  width: 100%;
-}
+    .post-item-date {
+      //color: var(--text-secondary);
+      text-align: left;
+      text-transform: uppercase;
+      margin-right: 16px;
+      font-size: 14px;
+      color: #818181;
+    }
 
-h3,
-.post-item {
- font-size: 1em;
-}
-a, 
-.post-item {
- text-decoration: none;
-}
+    .container {
+      margin: 0 auto;
+      max-width: 42em;
+      width: 100%;
+    }
 
-		</style>
-<div class="container">					{
-						posts.map((post) => {
+    h3,
+    .post-item {
+      font-size: 1em;
+    }
 
-return (
-<div>
-<div class="post-item">
-            <h3>
-              <a href=`/blog/${post.id}/`>{post.data.title}</a>
-            </h3>
-            <div class="post-item-footer">
-              <span class="post-item-date">{post.data.pubDate}</span>
+    a,
+    .post-item {
+      text-decoration: none;
+    }
+  </style>
+  <div class="container">
+    {
+      posts.map((post) => {
+        return (
+          <div>
+            <div class="post-item">
+              <h3>
+                <a href={`/blog/${post.id}/`}>{post.data.title}</a>
+              </h3>
+              <div class="post-item-footer">
+                <FormattedDate
+                  class="post-item-date"
+                  date={post.data.pubDate}
+                />
+              </div>
             </div>
-          </div> </div>)})}							
-</div>
+            <br />
+          </div>
+        );
+      })
+    }
+  </div>
 </BaseLayout>

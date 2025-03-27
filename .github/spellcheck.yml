@@ -1,23 +1,23 @@
 matrix:
-- name: Markdown
-  aspell:
-    lang: en
-    mode: markdown
-  dictionary:
-    wordlists:
-      - .wordlist.txt
-    encoding: utf-8
-    output: build/dictionary/python.dic
-  pipeline:
-  - pyspelling.filters.markdown:
-      markdown_extensions:
-      - markdown.extensions.extra:
-  - pyspelling.filters.html:
-      comments: false
-      ignores:
-        - code
-        - pre
-        - blockquote
-  sources:
-  - '**/*.md|!README.md|!index.md'
-  default_encoding: utf-8
+  - name: Markdown
+    aspell:
+      lang: en
+      mode: markdown
+    dictionary:
+      wordlists:
+        - .wordlist.txt
+      encoding: utf-8
+      output: build/dictionary/python.dic
+    pipeline:
+      - pyspelling.filters.markdown:
+          markdown_extensions:
+            - markdown.extensions.extra:
+      - pyspelling.filters.html:
+          comments: false
+          ignores:
+            - code
+            - pre
+            - blockquote
+    sources:
+      - "**/*.md|!README.md|!index.md"
+    default_encoding: utf-8

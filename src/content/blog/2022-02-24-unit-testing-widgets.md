@@ -1,8 +1,9 @@
 ---
-title: 'Unit Testing a Widget Library'
-pubDate: 'Feb 24 2022'
+title: "Unit Testing a Widget Library"
+pubDate: "Feb 24 2022"
 #categories: unit-testing
 ---
+
 I recently was working on a widget library in Python. Without getting into too much detail, one thing that plagued me was, **how do I want to unit test this?**
 
 I recently stumbled onto [lvgl](https://github.com/lvgl/lvgl), which is everything I want my library to be.
