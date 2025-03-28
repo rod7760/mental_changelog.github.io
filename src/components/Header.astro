@@ -4,11 +4,16 @@ import { SITE_TITLE } from "../consts";
 ---
 
 <header>
-  <nav class="mx-auto max-w-3/4">
-    <h2 class="logo max-w-min"><a href="/">{SITE_TITLE}</a></h2>
+  <nav class="flex align-center justify-between mx-auto py-4 max-w-3/4">
+    <h1 class="text-2xl logo max-w-min font-cool">
+      <a href="/">{SITE_TITLE}</a>
+    </h1>
+    <!--
+    TODO about page
     <div class="internal-links">
       <HeaderLink href="/about">About</HeaderLink>
     </div>
+    -->
   </nav>
 </header>
 <style>
@@ -19,21 +24,11 @@ import { SITE_TITLE } from "../consts";
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
   }
 
-  .logo {
-    font-size: 1em;
-    font-family: "press-start-2p";
-  }
-
   h2 a,
   h2 a.active {
     text-decoration: underline;
   }
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   nav a {
     padding: 1em 0.5em;
     color: var(--black);

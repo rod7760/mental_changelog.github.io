@@ -11,35 +11,14 @@ const posts = (await getCollection("blog")).sort(
 
 <BaseLayout>
   <style>
-    h2,
-    .post-item-footer {
-      font-family: var(--font-family-sans);
-      font-weight: 700;
-    }
-
-    .post-item-date {
-      //color: var(--text-secondary);
-      text-align: left;
-      text-transform: uppercase;
-      margin-right: 16px;
-      font-size: 14px;
-      color: #818181;
-    }
-
     .container {
       margin: 0 auto;
       max-width: 42em;
       width: 100%;
     }
 
-    h3,
-    .post-item {
-      font-size: 1em;
-    }
-
-    a,
-    .post-item {
-      text-decoration: none;
+    a {
+      color: inherit;
     }
   </style>
   <div class="container">
@@ -48,14 +27,14 @@ const posts = (await getCollection("blog")).sort(
         return (
           <div>
             <div class="post-item">
-              <h3>
-                <a href={`/blog/${post.id}/`}>{post.data.title}</a>
-              </h3>
+              <a
+                class="font-medium text-2xl underline underline-offset-6"
+                href={`/blog/${post.id}/`}
+              >
+                {post.data.title}
+              </a>
               <div class="post-item-footer">
-                <FormattedDate
-                  class="post-item-date"
-                  date={post.data.pubDate}
-                />
+                <FormattedDate class="font-normal" date={post.data.pubDate} />
               </div>
             </div>
             <br />

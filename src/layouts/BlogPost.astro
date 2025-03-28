@@ -19,28 +19,12 @@ const { title, description, pubDate, updatedDate } = Astro.props;
         max-width: 100%;
         margin: 0;
       }
-      .prose {
+      .reading-view {
         width: 720px;
         max-width: calc(100% - 2em);
         margin: auto;
         padding: 1em;
         color: rgb(var(--gray-dark));
-      }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
-      .title h1 {
-        margin: 0 0 0.5em 0;
-      }
-      .date {
-        margin-bottom: 0.5em;
-        color: rgb(var(--gray));
-      }
-      .last-updated-on {
-        font-style: italic;
       }
     </style>
   </head>
@@ -49,22 +33,17 @@ const { title, description, pubDate, updatedDate } = Astro.props;
     <Header />
     <main>
       <article>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
+        <div class="reading-view">
+          <div class="text-center mb-1">
+            <h1 class="mb-4 pt-1 text-4xl">{title}</h1>
+            <div class="mb-2">
               <FormattedDate date={pubDate} />
-              {
-                updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on {updatedDate}
-                  </div>
-                )
-              }
             </div>
-            <h1>{title}</h1>
             <hr />
           </div>
-          <slot />
+          <div class="prose">
+            <slot />
+          </div>
         </div>
       </article>
     </main>
